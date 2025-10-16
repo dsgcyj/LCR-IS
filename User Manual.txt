@@ -1,0 +1,16 @@
+此代码是基于Ultralytics公司的代码文件更改的，安装环境建议使用2.01的pytorch版本以及对应的torchaudio、torchvision，对应的其他环境在requirement.txt文件中，建议先安装torch，这样可以避免冲突，或者直接将requirement.txt文件中的torch版本进行限定。
+主程序文件在ultralytics-LCR-IS文件中，cfg文件中的yolov8-timm.yaml、yolov8-efficientViT.yaml、yolov8-fasternet.yaml、yolov8-starnet.yaml、yolov8-mobilenetv4.yaml、yolov8-HGNEetV2.yaml分别对应于论文中的4种不同主干网络。
+数据集与语义分割对比实验在以下链接，语义分割对比试验中还有玉米数据集验证，但是这一部分内容并没有在文章中体现：
+https://drive.google.com/drive/folders/1zpsX267e3X5xWt-88h6Dkd3bTvecoHnd?usp=sharing
+文件中的bestline-count.py与bestline-plot.py分别为导航线计算与导航线绘制，seg-to-segment.py文件为数据集转换。
+此外MP4为视频推理结果、navigationline与navigationline result为部分展示的推理结果。
+
+
+
+This code is based on modifications to Ultralytics' source files. The recommended installation environment uses PyTorch version 2.01 along with the corresponding torch_audio and torchvision libraries. Other required environments are listed in the requirements.txt file. It is advisable to install PyTorch first to avoid conflicts, or alternatively, explicitly specify the PyTorch version in the requirements.txt file.
+The main program file is located in ultralytics-LCR-IS. The cfg files include: yolov8-timm.yaml, yolov8-efficientViT.yaml, yolov8-fasternet.yaml, yolov8-starnet.yaml, yolov8-mobilenetv4.yaml, yolov8-HGNEetV2.yaml correspond to the four distinct backbone networks described in the paper.
+The dataset and semantic segmentation comparison experiments are available at the following link. The semantic segmentation comparison also includes validation using a corn dataset, though this section is not covered in the paper:
+https://drive.google.com/drive/folders/1zpsX267e3X5xWt-88h6Dkd3bTvecoHnd?usp=sharing
+The files bestline-count.py and bestline-plot.py perform navigation line calculation and visualization, respectively, while seg-to-segment.py handles dataset conversion.
+Additionally, MP4 contains video inference results, and navigationline/navigationline result showcases partial inference outputs.
+
